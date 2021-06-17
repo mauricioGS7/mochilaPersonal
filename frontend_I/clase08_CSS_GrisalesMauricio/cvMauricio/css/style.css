@@ -1,0 +1,54 @@
+header section{
+    background-color: #E6E6E6;
+    background-image: url('../img/circuit-board.svg');
+    opacity: 0.5;
+    padding: 60px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+
+img{
+    margin: auto;
+    display: block;
+}
+
+h1, h2{
+    background-color: #C4C4C4;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 400;
+    color: #214350;
+    text-transform: uppercase;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+
+.datos_personales{
+    font-style: italic;
+}
+
+ul{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, a{
+    font-family: 'Monserrat', sans-serif;
+    font-size:17px;
+    text-align: justify;
+}
+
+#icon_facebook{
+    width: 20px;
+}
+
+footer{
+    background-color: #515569;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
