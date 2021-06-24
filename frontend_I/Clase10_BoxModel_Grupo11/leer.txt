@@ -1,0 +1,2 @@
+Clase10_BoxModel es la carpeta con mi proyecto
+Clase10-DH-master es la carpeta que hizo el compañero Andrés Mauricio Ibarguen
