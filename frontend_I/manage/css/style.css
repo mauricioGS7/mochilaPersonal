@@ -1,0 +1,488 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@500&display=swap');
+
+/* Configuraciones iniciales */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Declaración de variables */
+:root{
+    --colorBotones:#F3603B;
+    --colorTitulos: #232C50;
+    --colorLetraMain: #B3B2B7;
+    --colorLetra: #FFFFFF;
+    --colorCopyright: #8C8C94;
+    --decoration-color:#c79800;
+    --fondoStarted: #F3613C;
+    --fondoSocial: #1E1E26;
+    --initialValue: 0;
+    --sizeh1: 45px;
+    --sizeh3: 36px;
+    --sizeh6: 16px;
+    --sizeFontNav: 13px;
+    --sizeFontButton: 13px;
+    --sizeWord: 16px;
+    --sizeCopyright: 12px;
+    --sizeIconAwe: 15px;
+    --sizeNewIconAwe: 25px;
+    --sizeImage: 70px;
+    --marginNav: 8px;
+    --marginH6: 15px;
+    --marginSection: 60px;
+    --marginCard: 20px;
+    --opacidad: 50%;
+    --pixelesRadius: 30px;
+    --paddingButtonV: 12px;
+    --paddingButtonH: 32px;
+    --paddingInputV: 12px;
+    --paddingInputH: 16px;
+    --paddingSitioV: 30px;
+    --paddingSitioH: 170px;
+    --paddingIntro: 28px;
+    --paddingOpinionV: 30px;
+    --paddingOpinionH: 100px;
+    --positionLeft: 100px;
+    --positionTop: 110vh;
+    --marginSitioV: 85px;
+    --marginSitioH: 170px;
+    --alturaDivFooter: 80px;
+    --widthDivIntro: 35vw;
+    --widthIntroP: 25vw;
+    --widthDivStarted: 500px;
+    --weightH: 700;
+    --zindexFondo: -1;
+    --zindexSolapa: 2;
+    
+}
+
+/* ----------------------------------------------------- */
+/* Estilos del body */
+/* ----------------------------------------------------- */
+body{
+    font-family: 'Be Vietnam', sans-serif;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    }
+
+/* Estilos de la imagen de fondo1 */
+.background1{
+    position: absolute;
+    z-index: var(--zindexFondo);
+    margin: var(--initialValue);
+    right: var(--initialValue);
+    top: var(--initialValue);
+}
+
+/* Estilos de la imagen de fondo2 */
+.background2{
+    position: absolute;
+    z-index: var(--zindexFondo);
+    top: var(--positionTop);    
+}
+
+/* Estilos de la imagen de fondo 3 */
+.background3{
+    position: absolute;
+    z-index: var(--zindexSolapa); 
+    opacity: var(--opacidad);
+    left: var(--positionLeft);
+    margin: var(--initialValue);       
+}
+
+/* Estilos de los botones con clase boton*/
+.boton{
+    font-size: var(--sizeFontButton);
+    border-color: var(--colorBotones);
+    border-radius: var(--pixelesRadius);
+    padding: var(--paddingButtonV) var(--paddingButtonH);
+}
+
+.boton:hover{
+    border-color: lightskyblue;
+    border-width: 2px;    
+}
+
+/* Estilos de los botones con clase botonTipo1 */
+.botonTipo1{
+    background: var(--colorBotones);
+    color: var(--colorLetra);
+}
+
+/* Estilos de titulos y Subtitulos */
+h3{
+    font-size: var(--sizeh3);
+}
+
+/* Estilos para todos los enlaces a*/
+a{
+    font-size: var(--sizeFontNav);
+    text-decoration: none;      
+}
+
+a:hover{
+    color: var(--fondoStarted);
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------------- */
+/* Estilos del header */
+/* ----------------------------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: var(--marginSitioV) var(--marginSitioH);
+}
+
+/* Estilos de la barra de navegación principal del header */
+header div nav li{   
+    display: inline;
+    margin: var(--marginNav);      
+}
+
+/* Estilos del menu hamburguer, inicialmente se encuentra oculto */
+header div.hamburguer{
+    display: none;
+}
+/* ----------------------------------------------------- */
+/* Estilos del main */
+/* ----------------------------------------------------- */
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos de cada uno de los section que conforman el main  */
+/* En este caso el main esta dividido en las secciones con clase intro, different y opinions */
+main section{
+    margin-bottom:var(--marginSection);
+}
+
+/* Estilos flex a cada uno de los sections */
+/* En este caso la sección con clase opinion tiene un div que debe ser flex */
+main section.intro, section.different, section.opinions div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Se establece un tamaño a los divs que conforman las sections */
+main section div{
+    width:var(--widthDivIntro);
+}
+
+/* Se establecen los estilos de la etiqueta h1 contenidos en los div de las section del main */
+main section div h1{
+    color:var(--colorTitulos);
+    font-size: var(--sizeh1);
+    font-weight:var(--weightH);
+    padding-bottom:var(--paddingIntro);
+}
+
+/* Se establecen los estilos de la etiqueta p contenidos en los div de las sections del main */
+main section div p{
+    font-size:var(--sizeWord);
+    padding-bottom: var(--paddingIntro);
+    width:var(--widthIntroP);
+}
+
+/* Se establecen los estilos de las etiquetas h3 contenidos en los div de las section del main */
+main section div h3{
+    color:var(--colorTitulos);
+    font-size: var(--sizeh3);
+    font-weight: var(--weightH);
+    padding-bottom:var(--paddingIntro);
+}
+
+/* Se establecen los estilos de las etiquetas h6 contenidos en los div de las section del main */
+main section div h6{
+    font-size: var(--sizeh6);
+    font-weight: var(--weightH);
+    margin-bottom: var(--marginH6);
+}
+
+/* Estilo particular de la section de clase intro */
+
+main section.intro{
+    padding: var(--paddingSitioV) var(--paddingSitioH);
+}
+
+main section.intro div.ilustration img{
+    position: relative;
+    /* width: 35vw; */
+    width: 390px;
+}
+
+
+/*  Estilo particular de la section de clase different */
+
+main section.different{
+    padding: var(--paddingSitioV) var(--paddingSitioH);
+}
+
+main section.different div.about article{
+    display: flex;
+    align-items: flex-start;
+}
+
+main section.different div.about article div p{
+    color: var(--colorLetraMain);
+    font-size: var(--sizeWord);
+}
+
+/* Estilo particular de la Section de clase opinions */
+
+main section.opinions{
+    text-align: center;
+    padding: var(--paddingOpinionV) var(--paddingOpinionH);
+}
+
+main section.opinions div div.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:var(--marginCard);
+}
+
+main section.opinions div div.card img{
+    width:var(--sizeImage);
+    height:var(--sizeImage);
+    align-self: center;
+    margin: calc(var(--marginNav) *2);
+}
+
+main section.opinions div div.card p{
+    color: var(--colorLetraMain);
+    font-size: var(--sizeWord);
+}
+
+/* Se dispone la carta oculta */
+main section.opinions div div.hidden{
+    display: none;
+}
+
+/* ----------------------------------------------------- */
+/* Estilos del footer */
+/* ----------------------------------------------------- */
+
+/* El footer se divide en div started y social */
+
+/* Estilos del div de clase started */
+footer div.started{
+    background: var(--fondoStarted);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--paddingSitioV) var(--paddingSitioH);    
+}
+
+/* Estilos de las etiquetas h3 contenidas en la clase started */
+footer div.started h3{
+    color: var(--colorLetra);    
+}
+
+/* Estilos de los botones de la clase started */
+footer div.started button{
+    color:var(--colorBotones);    
+}
+
+footer div.started div.title{
+    width: var(--widthDivStarted);
+}
+
+/* Estilos del div de la clase social  */
+footer div.social{
+    background: var(--fondoSocial);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--paddingSitioV) var(--paddingSitioH);    
+}
+
+/* Estilos de los enlaces de la barra de navegación del footer  */
+.socialMedia ul li{
+    display: inline;
+    margin: 8px;
+} 
+
+footer div.social div nav.socialMedia li a{
+    color: var(--colorLetra);
+    font-size: var(--sizeIconAwe);
+}
+
+/* Estilo del formulario  */
+footer div.social div form input{
+    border-radius: var(--pixelesRadius);
+    padding: var(--paddingInputV) var(--paddingInputH);
+}
+
+footer div.social div form input:focus{
+    border-color: rgb(64, 202, 71);
+    border-width: 5px;
+}
+
+footer div.social div p{
+    color: var(--colorCopyright);
+    font-size: var(--sizeCopyright);
+}
+
+/* Estilo de div de navegación de redes sociales */
+footer div.social div.navigation{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+footer div.social .footerMedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: var(--alturaDivFooter);
+}
+
+footer div.social div.socialMediaOfficial{
+    align-items: center;
+}
+
+footer div.social div.formCopyright{
+    align-items: flex-end;    
+}
+
+footer div.social div.copyright{
+    display: none;    
+}
+
+footer div.social nav ul li a{
+    color: var(--colorLetra);
+    font-size: var(--sizeFontNav);        
+}
+
+
+
+/* Media query para responsive a 768px */
+@media(max-width: 768px){
+    header, main section, footer div{
+        flex-wrap: wrap;
+        align-items: center;        
+    }
+
+    header{
+        margin: var(--marginSitioV) 10vw;
+        width: 80vw;
+        justify-content: space-between;
+    }
+
+    header div.hamburguer, main section.opinions{
+        display: inline;
+    }
+
+    header div nav, main section.opinions div div.hidden2,  header div button{
+        display: none;
+    }
+
+    main section div{
+        width:60vw;
+    }
+
+    main section.intro div{
+        justify-content: center;
+    }
+
+    main section.intro div p{
+        width: 50vw;
+    }
+ 
+    main section.intro div.ilustration{    
+        order: -1;       
+    }
+
+   
+    main section.different div p{
+        width: 50vw;
+    }
+
+    main section.different div.about article{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main section.different div.about article div.explain p{
+        width: 50vw;
+    }
+
+    main section.opinions{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section.opinions div{
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+
+    }
+
+    main section.opinions div p{
+        width: 80vw;
+    }
+
+
+    footer div.started{
+        flex-direction: column;
+        padding: 25px 0px;
+    }
+
+    footer div.started div.title{
+        width: 60vw;
+    }
+
+    footer div.social{
+        flex-direction: column;
+        padding: 25px 0px 15px;
+    }
+
+    footer div.social div.formCopyright{
+        order: -1;
+    }
+
+    footer div.social div.formCopyright p{
+        display: none;
+    }
+
+    footer div.social div.socialMediaOfficial{
+        order: 1;
+    }
+    
+
+    footer div.social div.copyright{
+        display: inline-flex;
+        order: 2;
+    }
+
+    footer div.social div.socialMediaOfficial nav{
+        order: -1;
+    }
+
+    footer div.social div nav.socialMedia li a{
+        font-size: var(--sizeNewIconAwe);
+    }
+
+    h1{
+        font-size: 30vw;
+    }
+    
+
+   
+    
+
+    
+
+}
