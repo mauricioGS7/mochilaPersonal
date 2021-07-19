@@ -54,7 +54,7 @@
     --widthDivStarted: 500px;
     --weightH: 700;
     --zindexFondo: -1;
-    --zindexSolapa: 2;
+    --zindexSolapa: -1;
     
 }
 
@@ -126,6 +126,10 @@ a{
 a:hover{
     color: var(--fondoStarted);
     text-decoration: underline;
+}
+
+img:hover{
+    transform: scale(1.3);
 }
 
 /* ----------------------------------------------------- */
@@ -218,7 +222,6 @@ main section.intro div.ilustration img{
     width: 390px;
 }
 
-
 /*  Estilo particular de la section de clase different */
 
 main section.different{
@@ -254,6 +257,12 @@ main section.opinions div div.card img{
     height:var(--sizeImage);
     align-self: center;
     margin: calc(var(--marginNav) *2);
+}
+
+main section.opinions div div.card img:hover{
+    transform: scale(1.5);
+    border-color: var(--fondoStarted);
+    border-width: 5px;
 }
 
 main section.opinions div div.card p{
